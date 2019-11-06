@@ -1,0 +1,28 @@
+# Ignore all the vendor folder
+vendor
+
+# Ignore Visual Studio
+.vscode
+
+# Ignore the generated assets from the app we use for testing
+/src/tests/app/web/assets
+
+# Ignore the runtime folder from the app we use for testing
+/src/tests/app/runtime
+
+# Ignore the local config files 
+/src/tests/app/config/params-local.php
+/src/tests/app/config/db-local.php
+
+# Ignore the generated output from the codeception tests in the app we use for testing
+/src/tests/_output
+/src/tests/_support
+
+# Ignore the generated RBAC phpManager files from the app we use for testing
+/src/tests/app/rbac
+
+# Mac DS_Store Files
+.DS_Store
+
+# Ignore the php_cs.cache
+.php_cs.cache

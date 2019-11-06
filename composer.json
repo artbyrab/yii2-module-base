@@ -1,0 +1,44 @@
+{
+    "name": "artbyrab/yii2-module-base",
+    "description": "A module base for a Yii2 module that is installable via Composer.",
+    "keywords": ["Yii2 Module Base", "Yii2", "Yii2 Module RBAC", "Yii2 Module Testing"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "artbyrab",
+            "email": "contact@art-by-rab.com"
+        }
+    ],
+    "type": "package",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.16.1",
+        "yiisoft/yii2-bootstrap": "~2.0.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/base": "~2.3.0",
+        "codeception/verify": "~0.4.0",
+        "codeception/specify": "~0.4.6",
+        "phpunit/phpunit": "6.*",
+        "friendsofphp/php-cs-fixer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "artbyrab\\Yii2ModuleBase\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "artbyrab\\Yii2ModuleBase\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+        ],
+        "post-update-cmd": [
+        ]
+    }
+}

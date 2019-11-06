@@ -1,0 +1,8 @@
+{
+    "package-name-camel-case": "Yii2ModuleBase",
+    "package-name": "Yii2 Module Base",
+    "package-author-name": "artbyrab",
+    "config-package-name-and-route": "module-base",
+    "rbac-admin-name-camel-case": "moduleBaseAdmin",
+    "rbac-admin-name-studly-caps": "ModuleBaseAdmin"
+}

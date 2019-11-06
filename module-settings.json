@@ -1,0 +1,8 @@
+{
+    "package-name-camel-case": "Yii2BananaBoat",
+    "package-name": "Yii2 Banana Boat",
+    "package-author-name": "jackSparrow",
+    "config-package-name-and-route": "banana-boat",
+    "rbac-admin-name-camel-case": "bananaBoatAdmin",
+    "rbac-admin-name-studly-caps": "BananaBoatAdmin"
+}
