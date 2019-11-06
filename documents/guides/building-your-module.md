@@ -8,7 +8,6 @@ Before building your own module on the top of this one, it is definately worth r
 
 Please note there are various quirks involved with automatically replacing these values. please see the comments on the module settings below for more detail.
 
-
 If you want to build your module on top of this one you will need to find and replace various module settings to get started. There are 2 ways you can replace the text, manually or using the built in console command.
 
 ### What are the module settings

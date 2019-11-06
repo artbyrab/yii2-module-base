@@ -6,7 +6,7 @@ If you want to add your module's migrations to a new Yii2 app you can follow thi
 * Add the module's alias:
 
 ```
-'@artbyrab/Yii2Billing' => '@vendor/artbyrab/yii2-billing/src',
+'@artbyrab/Yii2Module' => '@vendor/artbyrab/yii2-module/src',
 ```
 
 * Next add the migration alias in the controllerMap:
@@ -18,7 +18,7 @@ If you want to add your module's migrations to a new Yii2 app you can follow thi
         'migrationPath' => null, // disable non-namespaced migrations if app\migrations is listed below
         'migrationNamespaces' => [
             //'app\migrations', // Common migrations for the whole application
-            'artbyrab\Yii2Billing\migrations', // Migrations for the specific project's module
+            'artbyrab\Yii2Module\migrations', // Migrations for the specific project's module
             #'some\extension\migrations', // Migrations for the specific extension
         ],
     ],
