@@ -69,15 +69,6 @@ class ModuleSettingsController extends Controller
      * @var array Holds the origional module-settings data
      */
     private $defaultModuleSettingsArray = array(
-        // "author" => "artbyrab",
-        // "author-slug" => "artbyrab",
-        // "package-name" => "Yii2ModuleBase",
-        // "package-name-slug" => "Yii2ModuleBase",
-        // "package-name-camel-no-prefix" => "moduleBase",
-        // "module-default-route" => "module-base",
-        
-        //"composer-package" => "artbyrab/yii2-module-base",
-        //"namespace" => "artbyrab\\Yii2ModuleBase",
         "package-name-camel-case" => "Yii2ModuleBase",
         "package-name" => "Yii2 Module Base",
         "package-author-name" => "artbyrab",
@@ -271,7 +262,6 @@ class ModuleSettingsController extends Controller
      */
     private function replaceFromToInFolder($matchString, $replaceString, $folder)
     {
-        # grep -rl --exclude=*.json --exclude-dir='runtime' --exclude-dir='commands' --exclude-dir='documents' "{matchString}" '{folder}' | xargs sed -i 's#{matchString}#{replaceString}#g'
         $command = "grep -rl --exclude=*.json --exclude-dir='runtime' --exclude-dir='commands' --exclude-dir='documents' '{matchString}' '{folder}' | xargs sed -i 's#{matchString}#{replaceString}#g'";
 
         $placeholders = array(
