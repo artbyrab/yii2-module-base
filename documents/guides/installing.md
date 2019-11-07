@@ -66,21 +66,6 @@ $ php -S localhost:8080
 To stop the php server running you can do the following:
 
 * Press Ctrl-C to quit
-* If for some reason the server does not die
-    * type the following to find the process ID:
-```
-ps -ef | grep php
-```
-
-* This will show you something like below:
-```
-username      9027  9008  0 Mar09 pts/1    00:00:02 php -S localhost:8080
-```
-
-* Where 9027 is the process ID which you now kill with the below:
-```
-kill -9 9027
-```
 
 ## Viewing the module in your browser
 
