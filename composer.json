@@ -2,7 +2,7 @@
     "name": "artbyrab/yii2-module-base",
     "description": "A module base for a Yii2 module that is installable via Composer.",
     "keywords": ["Yii2 Module Base", "Yii2", "Yii2 Module RBAC", "Yii2 Module Testing"],
-    "license": "DBAD",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "artbyrab",
@@ -12,7 +12,7 @@
     "type": "package",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.16.1",
+        "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-bootstrap": "~2.0.0"
     },
     "require-dev": {
