@@ -2,7 +2,7 @@
 
 If you want to override any of the default routes from the module it is easy. 
 
-* First you need to set the module to not load it's own url rules so you can overwrite them. To do that set it when intialising the module in your app's config file as below. Just change the names below from this module's name to whatever this module is.
+* First you need to set the module to not load it's own url rules so you can overwrite them. To do that set it when initializing the module in your app's config file as below. Just change the names below from this module's name to whatever this module is.
 
 ```
 'modules' => [
@@ -14,7 +14,7 @@ If you want to override any of the default routes from the module it is easy.
 ```
 
 * Update your config file, whether it is web.php, test.php or another name
-* In the 'urlManager' section add in the routes you wish to overide
+* In the 'urlManager' section add in the routes you wish to override
 * Please see the example below:
 
 ```

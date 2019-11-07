@@ -4,7 +4,7 @@ As the module ships with a test setup that uses a SQLLite database by default we
 
 For security so database and param attributes are not stored in source control, this module takes advantage of param-local.php and db-local.php files. The files are used in the src/tests/app/config folder. Therefore when you install this module you will only see the params.php and db.php files, you can simply create your own params-local.php and db-local.php to override them. They will be merged by the src/tests/app/config/test.php and console.php files.
 
-The benefit is that you can add say a MYSQL database without commiting the password and username to your source control.
+The benefit is that you can add say a MYSQL database without committing the password and username to your source control.
 
 So to create your own files simply do the following:
 
@@ -12,7 +12,7 @@ So to create your own files simply do the following:
 
 * Create a params-local.php file
 * src/tests/app/config/params-local.php
-* Populate the file with your overwritten params as needed they won't be commited to source control, for example API keys or secure passwords
+* Populate the file with your overwritten params as needed they won't be committed to source control, for example API keys or secure passwords
 
 ```
 <?php
@@ -28,7 +28,7 @@ return [
 
 * Create a db-local.php file
 * src/tests/app/config/db-local.php
-* Populate the file with your overwritten params as needed they won't be commited to source control, for example API keys or secure passwords
+* Populate the file with your overwritten params as needed they won't be committed to source control, for example API keys or secure passwords
 
 ```
 <?php

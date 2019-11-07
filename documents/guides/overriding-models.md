@@ -1,6 +1,6 @@
 # Overriding models
 
-You can override models in the module as it implements the built in Yii2 dependancy injection. You can override models in the module configuration in the app config.
+You can override models in the module as it implements the built in Yii2 dependency injection. You can override models in the module configuration in the app config.
 
 An example of overriding the module's Announcement model with a local version in an app.
 

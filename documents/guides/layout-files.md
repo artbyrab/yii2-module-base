@@ -1,6 +1,6 @@
 # Layout files
 
-As Yii2 makes it easy to style your app using layout files i wanted to make it easy to style the various views without having to do any complex config file edits to make it work. Typically you could do controllerMap and overide each controller but that would be laborious and tedious. Therefore there is an easy way to set the modules various layout files.
+As Yii2 makes it easy to style your app using layout files i wanted to make it easy to style the various views without having to do any complex config file edits to make it work. Typically you could do controllerMap and override each controller but that would be laborious and tedious. Therefore there is an easy way to set the modules various layout files.
 
 # Admin layout file
 

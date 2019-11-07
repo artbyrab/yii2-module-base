@@ -70,6 +70,6 @@ Please note you only need to do this if you have any RBAC settings in your modul
 
 Please read the Yii2 official guide for more information on specifying an authManager for your app. This will allow for the RBAC
 
-### Overiding routes
+### Overriding routes
 
-For overiding routes please see the full guide.
+For overriding routes please see the full guide.

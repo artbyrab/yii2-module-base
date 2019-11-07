@@ -1,6 +1,6 @@
 # Building your module
 
-Before building your own module on the top of this one, it is definately worth running this module by starting the server as per the install guide and having a look at the various files and folders and trying to understand how it all works.
+Before building your own module on the top of this one, it is definitely worth running this module by starting the server as per the install guide and having a look at the various files and folders and trying to understand how it all works.
 
 ## Replacing module settings
 

@@ -48,7 +48,7 @@ If you have run the migrations for the module already as detailed in the install
 
 ### Limiting access via controllers
 
-As per the Yii2 docs you can limit access control by using the behaviours function in a controller as below:
+As per the Yii2 docs you can limit access control by using the behavior's function in a controller as below:
 ```
 /**
  * {@inheritdoc}
@@ -80,7 +80,7 @@ public function behaviors()
 }
 ```
 
-In this module i have handled this by creating the BaseAdminController at src/controllers/BaseAdminController that all my admin controllers extend from. This way they inherit the behavious of their parent controller which limits access to the admin area. Currently this only shows any example of not allowing anyone who is not logged in to view that area. I did not implement the specific roles of being able to read and write records which are defined in the modules migration file, which is outside the remit of this module.
+In this module i have handled this by creating the BaseAdminController at src/controllers/BaseAdminController that all my admin controllers extend from. This way they inherit the behaviors of their parent controller which limits access to the admin area. Currently this only shows any example of not allowing anyone who is not logged in to view that area. I did not implement the specific roles of being able to read and write records which are defined in the modules migration file, which is outside the remit of this module.
 
 ### Allowing logged in users to view the admin on the localhost demo
 

@@ -42,9 +42,9 @@ Module attributes are just that, the various attributes of a module that are all
 
 Overriding view files is easy using the built in Yii2 functionality.
 
-### Overriding models via Yii2 dependancy injection
+### Overriding models via Yii2 dependency injection
 
-Overrding models is possible thanks to the Yii2 dependancy injection functionality. You can see a working example of it here in this module's app folder.
+Overriding models is possible thanks to the Yii2 dependency injection functionality. You can see a working example of it here in this module's app folder.
 
 ### Overriding controllers
 
