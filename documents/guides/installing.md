@@ -2,15 +2,10 @@
 
 ## Install via composer
 
-The reccomended way to install is via Composer.
-Either install in the project via terminal
-```
-$ composer require artbyrab/yii2-module-base:~1.0
-```
+As you will use the module as a base you simply want to git clone it to your local workspace
 
-or add it to your composer.json file
 ```
-"artbyrab/yii2-module-base": "~1.0"
+$ git clone https://github.com/artbyrab/yii2-module-base.git your-app-name-here
 ```
 
 ## Manual install 

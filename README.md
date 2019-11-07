@@ -41,7 +41,7 @@ Therefore this module contains an example module with a built in Yii2 app for lo
 As you will use the module as a base you simply want to git clone it to your local workspace
 
 ```
-$ git clone https://artbyrab@bitbucket.org/artbyrab/yii2-module-base.git your-app-name-here
+$ git clone https://github.com/artbyrab/yii2-module-base.git your-app-name-here
 ```
 
 Then you need to setup the rest of the install. Please read the full install guide in our guides section below.
