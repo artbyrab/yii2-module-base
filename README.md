@@ -34,7 +34,7 @@ The key points of this module are:
 
 I created this module base because i myself really struggled to find a comprehensive tutorial when i was building my own Yii2 modules. The official Yii2 documenation is great, but it does not cover everything you might want in a module. Specifically i struggled with various parts of building a module including RBAC, translating, testing, testing databases, URL routing, module attributes, overriding layouts, sub controllers and more.
 
-Therefore this module contains an example module with a built in Yii2 app for local viewing and testing of the module. This saves you having to install a new Yii2 app and then installing the module to view it. Therefore, local development of your module will be vastly simplified, and there are examples of key things you may want to utilise in your own module.
+Therefore this module contains an example module with a built in Yii2 app for local viewing and testing of the module. This saves you having to install a new Yii2 app and then installing the module to view it. Therefore, local development of your module will be vastly simplified and there are examples of key things you may want to utilise in your own module.
 
 ## Installing
 
