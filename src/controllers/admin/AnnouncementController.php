@@ -17,7 +17,7 @@ class AnnouncementController extends BaseAdminController
 {
     /**
      * Lists all Announcement models.
-     * 
+     *
      * @return mixed
      */
     public function actionIndex()
@@ -33,7 +33,7 @@ class AnnouncementController extends BaseAdminController
 
     /**
      * Displays a single Announcement model.
-     * 
+     *
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -47,10 +47,10 @@ class AnnouncementController extends BaseAdminController
 
     /**
      * Creates a new Announcement model.
-     * 
-     * If creation is successful, the browser will be redirected to the 'view' 
+     *
+     * If creation is successful, the browser will be redirected to the 'view'
      * page.
-     * 
+     *
      * @return mixed
      */
     public function actionCreate()
@@ -68,10 +68,10 @@ class AnnouncementController extends BaseAdminController
 
     /**
      * Updates an existing Announcement model.
-     * 
-     * If update is successful, the browser will be redirected to the 'view' 
+     *
+     * If update is successful, the browser will be redirected to the 'view'
      * page.
-     * 
+     *
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -91,10 +91,10 @@ class AnnouncementController extends BaseAdminController
 
     /**
      * Deletes an existing Announcement model.
-     * 
-     * If deletion is successful, the browser will be redirected to the 'index' 
+     *
+     * If deletion is successful, the browser will be redirected to the 'index'
      * page.
-     * 
+     *
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -109,7 +109,7 @@ class AnnouncementController extends BaseAdminController
     /**
      * Finds the Announcement model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * 
+     *
      * @param integer $id
      * @return Announcement the loaded model
      * @throws NotFoundHttpException if the model cannot be found

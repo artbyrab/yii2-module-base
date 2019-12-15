@@ -6,7 +6,7 @@ use Yii;
 
 /**
  * This is the model class for table "announcement".
- * 
+ *
  * This is just an example model for show in the module.
  *
  * @property int $id

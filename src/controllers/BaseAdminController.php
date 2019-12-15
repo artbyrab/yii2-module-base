@@ -16,8 +16,8 @@ use yii\filters\AccessControl;
  * in the module. As we want to only allow logged in users, and also logged in
  * users that have been assigned the role 'moduleBaseAdmin' which is the
  * admin role for this module.
- * 
- * Additionally this will allow you to set a layout view file for any admin 
+ *
+ * Additionally this will allow you to set a layout view file for any admin
  * area controllers.
  */
 class BaseAdminController extends Controller
@@ -51,13 +51,13 @@ class BaseAdminController extends Controller
 
     /**
      * Set the admin layout view file
-     * 
+     *
      * This will set the admin layout view file is provided. This allows you
      * to easily wrap the admin views in your own admin layout theme files.
-     * 
-     * You should set the layout file as an alias in your config module 
-     * options as below: 
-     * 
+     *
+     * You should set the layout file as an alias in your config module
+     * options as below:
+     *
      *  ...
      *  'modules' => [
      *      'module-base' => [

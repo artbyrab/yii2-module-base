@@ -15,14 +15,14 @@ class Module extends \yii\base\Module implements BootstrapInterface
 {
     /**
      * @var boolean $useModuleUrlRules In your app you can set this to True
-     * if you want to False if you do not want to use the module's default 
-     * routes. 
-     * 
+     * if you want to False if you do not want to use the module's default
+     * routes.
+     *
      * For example if you want to change the url format of the module from
-     * www.yourapp.com/module-name/admin/controller/action to 
-     * www.yourapp.com/your-own-admin-url/module-name/controller/action, then 
-     * just set this in your app's config file while using the module. 
-     * 
+     * www.yourapp.com/module-name/admin/controller/action to
+     * www.yourapp.com/your-own-admin-url/module-name/controller/action, then
+     * just set this in your app's config file while using the module.
+     *
      * ...
      * 'modules' => [
      *      'this-modules-name' => [
@@ -30,20 +30,20 @@ class Module extends \yii\base\Module implements BootstrapInterface
      *          'useModuleUrlRules' => False,
      *      ],
      *      ...
-     * 
-     * If you set it to False in your app you will need to create the rules 
+     *
+     * If you set it to False in your app you will need to create the rules
      * there manually yourself in the url manager component.
-     * 
+     *
      * See the guide for more information.
      */
-    public $useModuleUrlRules = True;
+    public $useModuleUrlRules = true;
 
     /**
-     * @var string The admin layout view file if you wish to specify one in 
+     * @var string The admin layout view file if you wish to specify one in
      * your app.
-     * 
-     * You set this when you add the module to your app's config file as below: 
-     * 
+     *
+     * You set this when you add the module to your app's config file as below:
+     *
      *  'modules' => [
      *      'products-packages' => [
      *          'class' => 'artbyrab\Yii2ModuleBase\Module',
@@ -64,28 +64,28 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     public $defaultRoute = 'module';
 
-    /** 
+    /**
      * @var array $modelMap The user defined model map if they wish to override
      * any of the module classes with their own.
-     * 
+     *
      * The model map implements dependancy injection for the module's classes.
-     * This was taken from Dektrium's Excellent Yii2 User module: 
+     * This was taken from Dektrium's Excellent Yii2 User module:
      *  - https://github.com/dektrium/yii2-user
-     * 
+     *
      * This is merged with the default $_modelMap in the bootstrap function.
      */
     public $modelMap = [];
 
-    /** 
+    /**
      * @var array $_modelMap The default model map defined here in the module.
-     * 
+     *
      * The model map implements dependancy injection for the module's classes.
-     * This was taken from Dektrium's Excellent Yii2 User module: 
+     * This was taken from Dektrium's Excellent Yii2 User module:
      *  - https://github.com/dektrium/yii2-user
-     * 
-     * If the user of the module wishes to overide any defaults they can set 
+     *
+     * If the user of the module wishes to overide any defaults they can set
      * them in their app's config.
-     * 
+     *
      * This is merged with the $modelMap in the bootstrap function.
      */
     private $_modelMap = [
@@ -127,15 +127,15 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     /**
      * Define the URL rules
-     * 
+     *
      * This will simply define all the URL rules for the module which should
      * be called from the bootstrap function in this file.
-     * 
+     *
      * @param mixed $app the current app.
      */
     public function defineUrlRules($app)
     {
-        if ($this->useModuleUrlRules == True) {
+        if ($this->useModuleUrlRules == true) {
             $app->getUrlManager()->addRules([
                 new GroupUrlRule([
                     'prefix' => 'tiers/search',
@@ -145,7 +145,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
                 ]),
                 new GroupUrlRule([
                     'prefix' => '<module:module-base>/admin',
-                    'rules' => [ 
+                    'rules' => [
                         '<controller>/<id:\d+>' => '<controller>/view',
                         '<controller>/<id:\d+>/<action:(update|delete)>' => '<controller>/<action>',
                         '<controller>/<action:create>' => '<controller>/create',
@@ -158,25 +158,23 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     /**
      * Merge model maps
-     * 
-     * This will merge the model maps: 
+     *
+     * This will merge the model maps:
      *  - _modelMap
      *      - The default map for this module as defined by the module author
      *  - modelMap
      *      - The user specific map configured in the app's config file
-     * 
+     *
      * See the docblocks for both the above for more information.
-     * 
+     *
      * @param mixed $app the current app.
      */
     public function mergeModelMaps($app)
     {
         if ($app->hasModule('module-base') && ($module = $app->getModule('module-base')) instanceof Module) {
-
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
 
             foreach ($this->_modelMap as $name => $definition) {
-
                 $class = "artbyrab\\Yii2ModuleBase\\models\\" . $name;
 
                 Yii::$container->set($class, $definition);
