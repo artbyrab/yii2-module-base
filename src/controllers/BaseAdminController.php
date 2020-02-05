@@ -69,10 +69,15 @@ class BaseAdminController extends Controller
     public function setAdminLayout()
     {
         $module = Yii::$app->controller->module->id;
-        $adminModuleViewFilePath = \Yii::$app->getModule($module)->adminLayoutViewFilePath;
 
-        if (isset($adminModuleViewFilePath) && !empty($adminModuleViewFilePath)) {
-            $this->layout = $adminModuleViewFilePath;
+        $moduleObject = \Yii::$app->getModule($module);
+
+        if (!empty($moduleObject)) {
+            $adminModuleViewFilePath = $moduleObject->adminLayoutViewFilePath;
+
+            if (isset($adminModuleViewFilePath) && !empty($adminModuleViewFilePath)) {
+                $this->layout = $adminModuleViewFilePath;
+            }
         }
     }
     
