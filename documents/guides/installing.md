@@ -16,6 +16,14 @@ You can also manually install the module. Simply download a copy and unzip or un
 
 To view the module as intended you will need to run the database migrations and load the fixtures from a terminal.
 
+### Ensure RBAC folder is present and writeable
+
+Make sure the folder src/tests/app/rbac exists and is writeable.
+
+### Ensure the assets folder is present and writeable
+
+Make sure the folder /src/tests/app/web/assets exists and is writeable.
+
 ### Setup the database migrations
 
 Assuming your are already in the root of the directory of the module:
